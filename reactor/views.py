@@ -6,3 +6,5 @@ def index(request):
 	return HttpResponse("Hello world")
 
 
+def lams(request):
+	return HttpResponse("In lams")
