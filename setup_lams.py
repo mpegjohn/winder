@@ -6,7 +6,7 @@ os.environ.setdefault('DJANGO_SETTINGS_MODULE',
 
 import django
 django.setup()
-from reactor.models import Laminations
+from reactor.models import Lamination
 
 def populate():
 
@@ -19,7 +19,7 @@ def populate():
 				first_row = 0
 				continue
 
-			l = Laminations(lam_size=row[0],
+			l = Lamination(lam_size=row[0],
 				measure_A=getFoat(row[1]),
 				measure_B=getFoat(row[2]),
 				measure_C=getFoat(row[3]),
