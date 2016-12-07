@@ -1,2 +1,2 @@
 # winder
-Django based windig calculation
+Django based transformer and reactor winding calculation
