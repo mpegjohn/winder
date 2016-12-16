@@ -1,0 +1,46 @@
+<form action="/transformer/input_data/" method="post">
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<script>
+
+
+
+
+	$(document).ready(function(){
+	//	$("id_s2_voltage").prop('disabled', false);
+
+		registerHandlers();
+
+	});
+
+	function registerHandlers() {
+
+	$('#id_s2_enabled').change(function() {
+
+		if(this.checked) {
+			$("#id_s2_voltage").prop('disabled', false);
+		}
+		else {
+			$("#id_s2_voltage").prop('disabled', true);
+		}
+
+		
+	});
+
+	};
+</script>
+
+</head>
+<body>
+ <table>
+    {{ form }}
+ </table>
+
+   {{form.primary_voltage.label_tag}}
+   {{form.primary_voltage}}
+
+    <input type="submit" value="Submit" />
+</body>
+</form>
+
