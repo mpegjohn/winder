@@ -20,15 +20,39 @@
 
 		if(this.checked) {
 			$("#id_s2_voltage").prop('disabled', false);
+			$("#id_s2_current").prop('disabled', false);
 		}
 		else {
 			$("#id_s2_voltage").prop('disabled', true);
+			$("#id_s2_current").prop('disabled', true);
 		}
+		});
 
-		
-	});
+	$('#id_s3_enabled').change(function() {
 
+		if(this.checked) {
+			$("#id_s3_voltage").prop('disabled', false);
+			$("#id_s3_current").prop('disabled', false);
+		}
+		else {
+			$("#id_s3_voltage").prop('disabled', true);
+			$("#id_s3_current").prop('disabled', true);
+		}
+		});
+
+	$('#id_s4_enabled').change(function() {
+
+		if(this.checked) {
+			$("#id_s4_voltage").prop('disabled', false);
+			$("#id_s4_current").prop('disabled', false);
+		}
+		else {
+			$("#id_s4_voltage").prop('disabled', true);
+			$("#id_s4_current").prop('disabled', true);
+		}
+		});
 	};
+
 </script>
 
 </head>
